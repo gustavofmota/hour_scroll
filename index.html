@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <title>Clock Component</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    <main>
+        <div>
+            <section id="hours">
+
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+
+<script>
+     var times = []
+ for (var i = 0; i < 24; i++) {
+		var time = i
+		if (i < 10) {
+			time = '0' + time
+		}
+		times.push(time.toString())
+ }
+
+ if (document.readyState !== 'loading') {
+		fn()
+ } else {
+		setHoursOnDisplay()
+ }
+</script>

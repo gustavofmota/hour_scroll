@@ -1,0 +1,36 @@
+body{
+    font-family: Chivo, Helvetica, sans-serif;
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 16px;
+        > div{
+            width: fit-content;
+            height: 300px;
+            background-color: antiquewhite;
+            display:flex;
+            section{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                > div{
+                    font-size: 250px;
+                    line-height: 300px;
+                    width: inherit;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    scroll-snap-align: center;
+                }
+            }
+            section#hours{
+                flex-direction: column;
+                overflow-y: scroll;
+                scroll-snap-type: y mandatory;
+            }
+        }
+    }
+}
